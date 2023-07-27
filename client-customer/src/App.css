@@ -1,0 +1,121 @@
+/* styles.css */
+.body-customer {
+  width: auto;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.text-center {
+  text-align: center;
+}
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+  background-color: #ffffff;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 110px;
+}
+.float-right {
+  float: right;
+  padding: 5px 180px 5px 0px;
+}
+.float-right a{
+  color: #0000ff;
+}
+.float-right a:hover{
+  color: #333366;
+}
+
+.float-left {
+  float: left;
+  padding: 5px 0px 5px 180px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.float-left a{
+  text-decoration: none;
+  color: #0000ff;
+}
+.float-left a:hover{
+  color: #000077;
+  background-color: ghostwhite;
+}
+.float-clear {
+  clear: both;
+}
+.mx-3 a{
+  text-transform: uppercase;
+  display: inline;
+  text-decoration: none;
+}
+.mx-3:hover{
+  background-color: aquamarine;
+  padding: 10px;
+}
+.nav-fixed{
+  width: 200px;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
